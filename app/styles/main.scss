@@ -1,0 +1,238 @@
+/*****************************************************************************
+  BeniBeats
+******************************************************************************/
+
+
+@import '../../bower_components/bourbon/dist/_bourbon.scss';
+
+
+
+$tablet: new-breakpoint(min-width 480px);
+$desktop: new-breakpoint(min-width 888px);
+$bigtime: new-breakpoint(min-width 1080px);
+
+
+@import '../../bower_components/neat/app/assets/stylesheets/_neat.scss';
+
+
+
+img {
+	max-width: 100%;
+}
+
+/*****************************************************************************
+  Base Styles
+******************************************************************************/
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 21px;
+}
+
+@font-face {
+	font-family: 'base02';
+	src: url('/fonts/base02.ttf') format('truetype');
+
+}
+
+@font-face {
+	font-family: 'porcelain';
+	src: url('/fonts/PORCELAI.ttf') format('truetype');
+
+}
+
+
+
+/*****************************************************************************
+  Layout Styles
+******************************************************************************/
+
+
+
+
+/*****************************************************************************
+  Module Styles
+******************************************************************************/
+
+
+@media screen and (max-width: 1920px) {
+
+	.img-background {
+		max-height: 100%;
+		max-width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: -10;
+	}
+
+	.wrapper-header {
+		width: 100%;
+
+		.wrapper-panel {
+			width: 50%;
+			margin: 0 45%;
+
+			#logo {
+				width: 100%;
+			}
+
+			#song-name {
+				font-family: 'Dawning of a New Day', cursive;
+				text-align: center;
+				margin: 1em auto;
+				padding: 0;
+				font-size: 2em;
+			}
+
+			#song-player {
+				margin: 0;
+				text-align: center;
+
+				audio {
+					width: 50%;
+				}
+			}
+
+			#app-store {
+				width: 25%;
+				margin: 3em auto;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1057px) {
+
+	.wrapper-header {
+		width: 100%;
+
+		.wrapper-panel {
+			width: 50%;
+			margin: 0 45%;
+		
+			#song-name {
+				margin: 1em auto;
+				padding: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+
+	.wrapper-header {
+		width: 100%;
+
+		.wrapper-panel {
+			width: 50%;
+			margin: 0 48%;
+
+			.wrapper-player {
+				margin-left: 1em;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 900px) {
+
+	.wrapper-image {
+		width: 75%;
+
+		.img-background {
+			position: static;
+		}
+	}
+
+	.wrapper-header {
+		width: 100%;
+
+		.wrapper-panel {
+			width: 100%;
+			margin: 0 auto;
+
+			.wrapper-player {
+				margin:0;
+			}
+
+			#logo {
+				padding: 0 1%;
+				width: 100%;
+			}
+
+			#song-name {
+				margin: 0 0 .3em 0;
+				padding: 0 1%;
+				font-size: 3em;
+			}
+
+			#song-player {
+				text-align: center;
+				margin-top: 1.8em;
+
+				audio {
+					width: 100%;
+					padding: 0 1%;
+				}
+			}
+
+			#app-store {
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 599px) {
+
+	.wrapper-header {
+		width: 100%;
+
+		.wrapper-panel {
+			width: 100%;
+			margin: 0 auto;
+
+			#logo {
+				padding: 0 1%;
+				width: 100%;
+			}
+
+			#song-name {
+				margin: 0 0 .3em 0;
+				padding: 0 1%;
+				font-size: 1.5em;
+			}
+
+			#song-player {
+				text-align: center;
+				margin-top: 1.8em;
+
+				audio {
+					width: 100%;
+					padding: 0 1%;
+				}
+			}
+
+			#app-store {
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 400px){
+
+	.wrapper-image {
+		width: 100%;
+		
+		.img-background {
+			position: static;
+		}
+	}
+}
